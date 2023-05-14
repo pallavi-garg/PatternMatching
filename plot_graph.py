@@ -12,6 +12,7 @@ for name, g_df in aggregated_df.groupby(aggregated_df.algorithm):
     plt.plot(g_df[['length']], g_df[['average_time']], label=name) 
 
 plt.legend()
+plt.grid()
 plt.xlabel('Pattern Length')
 plt.ylabel('Time (ms)')
 plt.show()
